@@ -13,12 +13,12 @@ def sptext():
         try:
             print("Recognizing...")
             data = recog.recognize_google(audio)
-            print(data)
+            #print(data)
             return data
         except sr.UnknownValueError:
             print("Could not understand the audio")
 
-sptext()
+#sptext()
 def speechtx(x):
     obj=pyttsx3.init()
     voice=obj.getProperty('voices')
@@ -30,9 +30,12 @@ def speechtx(x):
 
 #speechtx("Hii bro what r u doing ")
 
-"""if __name__=='__main__':
-        if sptext().lower() =="hello":
-            pass
-        else:
-             print("tata")
-"""
+if __name__=='__main__':
+        #if sptext().lower() =="hello":
+           data1=sptext().lower()
+           print(data1)
+           if "your name"in data1:
+                name="my name is akif"
+                speechtx(name)
+           
+        
