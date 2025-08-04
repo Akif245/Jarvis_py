@@ -28,10 +28,10 @@ def speechtx(x):
     obj.say(x)
     obj.runAndWait()
 
-#speechtx("Hii bro what r u doing ")
+speechtx("Hii bro what r u doing ")
 
 if __name__=='__main__':
-        #if sptext().lower() =="hello":
+        if sptext().lower() =="hello":
            data1=sptext().lower()
            print(data1)
            if "your name"in data1:
